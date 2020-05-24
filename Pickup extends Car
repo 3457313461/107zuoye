@@ -1,0 +1,27 @@
+public class Pickup extends Car{
+
+    private int personCapacity;
+    private double goodCapacity;
+
+    public Pickup(int number, String brand, double fee, int personCapacity, double goodCapacity) {
+
+        super(number, brand, fee);
+        this.personCapacity = personCapacity;
+        this.goodCapacity = goodCapacity;
+
+    }
+
+    public int getPersonCapacity() {
+        return personCapacity;
+    }
+
+    public double getGoodCapacity(){
+        return goodCapacity;
+    }
+
+    @Override
+    public String toString() {
+        return number + "\t" + brand + "\t" + fee + "元/天\t" +
+                personCapacity + "人\t" + goodCapacity + "吨\n";
+    }
+}
