@@ -1,0 +1,20 @@
+public class Van extends Car{
+
+    private double goodCapacity;
+
+    public Van(int number, String brand, double fee, double goodCapacity) {
+
+        super(number, brand, fee);
+        this.goodCapacity = goodCapacity;
+
+    }
+
+    public double getGoodCapacity(){
+        return goodCapacity;
+    }
+
+    public String toString() {
+        return number + "\t" + brand + "\t" + fee + "元/天\t" + goodCapacity + "吨" + "\n";
+    }
+
+}
