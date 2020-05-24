@@ -1,0 +1,20 @@
+public class Auto extends Car{
+
+    private int personCapacity;
+
+    public Auto(int number, String brand, double fee, int personCapacity) {
+
+        super(number, brand, fee);
+        this.personCapacity = personCapacity;
+    }
+
+    public int getPersonCapacity() {
+        return personCapacity;
+    }
+
+    @Override
+    public String toString() {
+        return number + "\t" + brand + "\t" + fee + "元/(车.天）\t" + personCapacity + "人\n";
+    }
+
+}
